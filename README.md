@@ -36,9 +36,9 @@
 
 ### **Бизнес анализ** 
 ### Модуль 1: 
-1. **[User Stories](./materials/01-User-Stories-Interface-Mockups-Use-Cases/user-stories.md)** - Создание и работа с пользовательскими историями
-2. **[Макеты интерфейсов](./materials/01-User-Stories-Interface-Mockups-Use-Cases/interface-mockups.md)** - Разработка прототипов и макетов
-3. **[Сценарии использования](./materials/01-User-Stories-Interface-Mockups-Use-Cases/use-cases.md)** - Описание пользовательских сценариев
+1. **[User Stories](./01-User-Stories-Interface-Mockups-Use-Cases/materials/user-stories.md)** - Создание и работа с пользовательскими историями
+2. **[Макеты интерфейсов](./01-User-Stories-Interface-Mockups-Use-Cases/materials/interface-mockups.md)** - Разработка прототипов и макетов
+3. **[Сценарии использования](./01-User-Stories-Interface-Mockups-Use-Cases/materials/use-cases.md)** - Описание пользовательских сценариев
 
 ### Модуль 2: 
 4. **[BPMN диаграммы](./materials/module2/bpmn-diagrams.md)** - Описание бизнес-процессов
