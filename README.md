@@ -1,6 +1,6 @@
 # Analyst 3.0 - Курс по аналитике и созданию AI-агента
 
-![Analyst 3.0 Banner](misc\images\Analyst.jpg)
+![Analyst 3.0 Banner](misc/images/Analyst.jpg)
 
 ## 📋 Описание курса
 
