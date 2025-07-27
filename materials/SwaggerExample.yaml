@@ -1,0 +1,118 @@
+
+openapi: 3.0.3
+info:
+  title: Swagger  - OpenAPI 3.0
+  description: примеры методов
+  version: 1.0.0
+servers:
+  - url: https://petstore3.swagger.io/api/v3
+  
+tags:
+  - name: user
+    description: группа методов для работы с пользователя
+  - name: cat
+    description: группа методов для работы с животными
+    
+paths:
+  /users:
+    post:
+      tags:
+        - user
+      summary: создание пользователя
+      description: создание пользователякоторыйлгпрпэ кплцущйщпщкц
+      requestBody:
+        description: параметры метода для создания пользовтаеля
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Users'
+      responses:
+       '200':
+         description: Success
+         content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Response'    
+              
+       '400':
+         description: Invalid body
+       '500':
+         description: Server error    
+  
+  /cat:
+    get:
+      summary: краткое описание
+      description: получить кота по идентификатору
+      parameters:
+        - name: nickname
+          in: query
+          description: gjbcr gj rkbxrt
+          required: false
+          schema:
+            type: string
+        - name: years
+          in: query
+          description: gjbcr gj rkbxrt
+          required: true
+          schema:
+            type: string
+      responses:
+       '200':
+         description: Success
+         content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Cat'    
+              
+       '400':
+         description: Invalid body
+       '500':
+         description: Server error
+      
+      
+      
+              
+components:
+  schemas:
+      
+    Users:
+      type: object
+      properties:
+        name:
+          type: string
+          example: theUser
+        phone:
+          type: string
+          example: '12345'
+        adres:
+          type: string
+          description: адрес
+
+    Cat:
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
+        cats:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: integer
+              nickname:
+                type: string
+          
+    Response:
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
+      
+      
